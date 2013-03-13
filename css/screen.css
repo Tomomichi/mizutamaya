@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/*****************************************************************
+* SETTING
+*****************************************************************/
+/* line 17, ../../../../.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*****************************************************************
+* COMMON
+*****************************************************************/
+/* line 13, ../sass/screen.scss */
+body {
+  background: url("../img/cloth_alike.png");
+  font: 80%/19px Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif !important;
+  letter-spacing: 0.1em !important;
+  color: #333333;
+}
+
+/* Clear Fix */
+/* line 21, ../sass/screen.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+
+/* line 26, ../sass/screen.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 31, ../sass/screen.scss */
+#container {
+  width: 70%;
+  margin: 160px auto 0 auto;
+}
+
+/* line 36, ../sass/screen.scss */
+.box {
+  margin-bottom: 70px;
+}
+
+/*****************************************************************
+* HEADER
+*****************************************************************/
+/* line 43, ../sass/screen.scss */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: url("../img/cloth_alike.png");
+}
+
+/* line 50, ../sass/screen.scss */
+#headline {
+  font-size: 11px;
+  color: #efefef;
+  background: #333333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+/* line 58, ../sass/screen.scss */
+#headline h1, #headline ul li {
+  float: left;
+}
+/* line 61, ../sass/screen.scss */
+#headline ul {
+  float: right;
+}
+/* line 63, ../sass/screen.scss */
+#headline ul a {
+  color: #efefef;
+  text-decoration: none;
+}
+/* line 67, ../sass/screen.scss */
+#headline ul li:first-child:after {
+  content: "|";
+  margin: 0 7px;
+}
+
+/* line 74, ../sass/screen.scss */
+#header_container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*****************************************************************
+* TOP
+*****************************************************************/
+/* line 83, ../sass/screen.scss */
+#top {
+  width: 70%;
+  margin: 30px auto 0 auto;
+  padding-bottom: 10px;
+}
+/* line 87, ../sass/screen.scss */
+#top h1, #top li {
+  float: left;
+}
+/* line 90, ../sass/screen.scss */
+#top nav {
+  float: right;
+}
+
+/* line 94, ../sass/screen.scss */
+.shadow {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+}
+
+/*****************************************************************
+* PHOTOS
+*****************************************************************/
+/* line 101, ../sass/screen.scss */
+#photos {
+  margin-bottom: 40px;
+}
+/* line 103, ../sass/screen.scss */
+#photos img {
+  width: 100%;
+}
+
+/*****************************************************************
+* INFO
+*****************************************************************/
+/* line 112, ../sass/screen.scss */
+#info section {
+  float: left;
+  width: 48%;
+}
+/* line 115, ../sass/screen.scss */
+#info section:first-child {
+  margin-right: 4%;
+}
+
+/* line 120, ../sass/screen.scss */
+#tmp_widget {
+  width: 100%;
+}
+
+/* line 124, ../sass/screen.scss */
+.menu {
+  border-bottom: 1px dotted #333333;
+  margin-bottom: 25px;
+}
+
+/* line 129, ../sass/screen.scss */
+.subtitle {
+  font-size: 22px;
+  margin-bottom: 15px;
+  line-height: 1.2em;
+}
+
+/*****************************************************************
+* Back To Top
+*****************************************************************/
+/* line 139, ../sass/screen.scss */
+#page-top {
+  position: fixed;
+  width: 15%;
+  bottom: 10px;
+  right: 0%;
+  text-align: center;
+  cursor: pointer;
+}

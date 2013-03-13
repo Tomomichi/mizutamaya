@@ -1,0 +1,147 @@
+/*****************************************************************
+* SETTING
+*****************************************************************/
+
+@import "compass";
+@import "compass/reset";
+$color-white: #EFEFEF;
+$color-black: #333333;
+
+/*****************************************************************
+* COMMON
+*****************************************************************/
+body {
+	background: url("../img/cloth_alike.png");
+	font: 80%/19px Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
+	letter-spacing: 0.1em !important;
+  color: $color-black;
+}
+
+/* Clear Fix */
+.cf:before {
+  content:"";
+  display:block;
+  overflow:hidden;
+}
+.cf:after {
+  @extend .cf:before;
+  clear:both;
+}
+
+#container {
+	width: 70%;
+	margin: 160px auto 0 auto;
+}
+
+.box {
+	margin-bottom: 70px;
+}
+
+/*****************************************************************
+* HEADER
+*****************************************************************/
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: url("../img/cloth_alike.png");
+}
+
+#headline {
+	font-size: 11px;
+	color: $color-white;
+	background: $color-black;
+	position: fixed;
+	width: 100%;
+	top: 0;
+
+	h1, ul li {
+		float: left;
+	}
+	ul {
+		float: right;
+		a {
+			color: $color-white;
+			text-decoration: none;
+		}
+		li:first-child:after {
+			content: "|";
+			margin: 0 7px;
+		}
+	}
+}
+
+#header_container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+
+/*****************************************************************
+* TOP
+*****************************************************************/
+#top {
+	width: 70%;
+	margin: 30px auto 0 auto;
+	padding-bottom: 10px;
+  h1, li {
+		float: left;
+	}
+	nav {
+		float: right;
+	}
+}
+.shadow {
+	@include box-shadow(rgba(0,0,0,0.1) 0 1px 0);
+}
+
+/*****************************************************************
+* PHOTOS
+*****************************************************************/
+#photos {
+	margin-bottom: 40px;
+	img {
+  	width: 100%;
+	}
+}
+
+
+/*****************************************************************
+* INFO
+*****************************************************************/
+#info section {
+	float: left;
+	width: 48%;
+	&:first-child {
+		margin-right: 4%;
+	}
+}
+
+#tmp_widget {
+	width: 100%;
+}
+
+.menu {
+	border-bottom: 1px dotted $color-black;
+	margin-bottom: 25px;
+}
+
+.subtitle {
+	font-size: 22px;
+	margin-bottom: 15px;
+	line-height: 1.2em;
+}
+
+
+/*****************************************************************
+* Back To Top
+*****************************************************************/
+#page-top {
+	position: fixed;
+	width: 15%;
+	bottom: 10px;
+	right: 0%;
+	text-align: center;
+	cursor: pointer;
+}
+
