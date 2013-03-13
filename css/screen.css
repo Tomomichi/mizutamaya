@@ -164,8 +164,12 @@ header {
 #top nav {
   float: right;
 }
+/* line 93, ../sass/screen.scss */
+#top h1 {
+  margin-top: 20px;
+}
 
-/* line 94, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .shadow {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
@@ -175,11 +179,11 @@ header {
 /*****************************************************************
 * PHOTOS
 *****************************************************************/
-/* line 101, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 #photos {
   margin-bottom: 40px;
 }
-/* line 103, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 #photos img {
   width: 100%;
 }
@@ -187,28 +191,28 @@ header {
 /*****************************************************************
 * INFO
 *****************************************************************/
-/* line 112, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 #info section {
   float: left;
   width: 48%;
 }
-/* line 115, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 #info section:first-child {
   margin-right: 4%;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 #tmp_widget {
   width: 100%;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .menu {
   border-bottom: 1px dotted #333333;
   margin-bottom: 25px;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .subtitle {
   font-size: 22px;
   margin-bottom: 15px;
@@ -218,12 +222,30 @@ header {
 /*****************************************************************
 * Back To Top
 *****************************************************************/
-/* line 139, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 #page-top {
   position: fixed;
   width: 15%;
-  bottom: 10px;
+  bottom: 50px;
   right: 0%;
   text-align: center;
   cursor: pointer;
+}
+
+/*****************************************************************
+* Footer
+*****************************************************************/
+/* line 156, ../sass/screen.scss */
+footer {
+  font-size: 11px;
+  color: #efefef;
+  background: #333333;
+}
+
+/* line 162, ../sass/screen.scss */
+#footer {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5px;
 }
