@@ -42,6 +42,7 @@ body {
 *****************************************************************/
 header {
 	position: fixed;
+	z-index: 2;
 	top: 0;
 	width: 100%;
 	background: url("../img/cloth_alike.png");
@@ -136,6 +137,36 @@ header {
 	line-height: 1.2em;
 }
 
+h3 {
+	font-size: 16px;
+	margin-bottom: 2px;
+}
+
+
+/*****************************************************************
+* Access
+*****************************************************************/
+#access_box {
+	div {
+		float: left;
+		&:first-child {
+			width: 65%;
+			margin-right: 5%;
+		}
+		&:last-child {
+			width: 30%;
+		}
+	}
+
+	iframe {
+		width: 100%;
+	}
+
+	p {
+		margin-bottom: 25px;
+	}
+}
+
 
 /*****************************************************************
 * Back To Top
@@ -165,3 +196,115 @@ footer {
 	text-align: center;
 	padding-top: 5px;
 }
+
+
+
+/*****************************************************************
+* SideShow
+*****************************************************************/
+#slider {
+	z-index: 0;
+	position: relative;
+	margin-bottom: 10px;
+
+	img {
+		border: 12px solid rgba(0,0,0,0.8);
+    @include box-sizing(border-box);
+	}
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+.centered-btns_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 50%;
+  left: 0;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("themes.gif") no-repeat left top;
+  margin-top: -45px;
+}
+
+.centered-btns_nav:active {
+  opacity: 1.0;
+}
+
+.centered-btns_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 1px;
+}
+
+.centered-btns_nav:focus {
+  outline: none;
+}
+
+.centered-btns_tabs {
+  text-align: center;
+}
+
+.centered-btns_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  margin-right: 5px;
+}
+
+.centered-btns_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #ccc;
+  background: rgba(0,0,0, .2);
+  display: inline-block;
+  _display: block;
+  *display: block;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  width: 9px;
+  height: 9px;
+}
+
+.centered-btns_here a {
+  background: #222;
+  background: rgba(0,0,0, .8);
+}
+

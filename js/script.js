@@ -18,11 +18,29 @@ $(function() {
 			topBtn.fadeOut();
 		}
 	});
+
 	//スクロールしてトップ
-    topBtn.click(function () {
+	topBtn.click(function () {
 		$('body,html').animate({
 			scrollTop: 0
 		}, 500);
 		return false;
-    });
+	});
+
+	//スムーズスクロール
+	$('a[href^=#]').click(function() {
+		var speed = 500;
+		var href= $(this).attr("href");
+		var target = $(href == "#" || href == "" ? 'html' : href);
+		var position = target.offset().top - 165;
+		$('body').animate({scrollTop:position}, speed, 'swing');
+		$("#top").removeClass("shadow");
+		return false;
+	});
+
+	$(".rslides").responsiveSlides({
+		pager: true,
+		nav: true,
+		namespace: "centered-btns",
+	});
 });
