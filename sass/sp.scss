@@ -1,0 +1,33 @@
+/*****************************************************************
+* Smart Phone
+*****************************************************************/
+#header_container, #top, #container, #footer, #info section, #access_box div {
+	width: 100%;
+	float: none;
+}
+
+#header_container h1 {
+	display: none;
+}
+
+#top h1, #top nav {
+	float: none;
+	text-align: center;
+}
+
+#container {
+  margin-top: 210px;
+}
+
+#info section {
+	margin-bottom: 70px;
+}
+
+#access_box div:first-child {
+	width: 100%;
+	margin: 0 auto 30px auto;
+}
+
+#page-top {
+	visibility: hidden;
+}
