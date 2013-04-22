@@ -169,8 +169,12 @@ header {
 #top h1 {
   margin-top: 20px;
 }
+/* line 96, ../sass/screen.scss */
+#top h1 img {
+  width: 400px;
+}
 
-/* line 99, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .shadow {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
@@ -180,11 +184,11 @@ header {
 /*****************************************************************
 * PHOTOS
 *****************************************************************/
-/* line 106, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 #photos {
   margin-bottom: 40px;
 }
-/* line 108, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 #photos img {
   width: 100%;
 }
@@ -192,35 +196,35 @@ header {
 /*****************************************************************
 * INFO
 *****************************************************************/
-/* line 117, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 #info section {
   float: left;
   width: 48%;
 }
-/* line 120, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 #info section:first-child {
   margin-right: 4%;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 #tmp_widget {
   width: 100%;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .menu {
   border-bottom: 1px dotted #333333;
   margin-bottom: 25px;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .subtitle {
   font-size: 22px;
   margin-bottom: 15px;
   line-height: 1.2em;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 h3 {
   font-size: 16px;
   margin-bottom: 2px;
@@ -229,24 +233,24 @@ h3 {
 /*****************************************************************
 * Access
 *****************************************************************/
-/* line 150, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 #access_box div {
   float: left;
 }
-/* line 152, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 #access_box div:first-child {
   width: 65%;
   margin-right: 5%;
 }
-/* line 156, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 #access_box div:last-child {
   width: 30%;
 }
-/* line 161, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 #access_box iframe {
   width: 100%;
 }
-/* line 165, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 #access_box p {
   margin-bottom: 25px;
 }
@@ -254,7 +258,7 @@ h3 {
 /*****************************************************************
 * Back To Top
 *****************************************************************/
-/* line 174, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 #page-top {
   position: fixed;
   width: 15%;
@@ -267,14 +271,14 @@ h3 {
 /*****************************************************************
 * Footer
 *****************************************************************/
-/* line 187, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 footer {
   font-size: 11px;
   color: #efefef;
   background: #333333;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 #footer {
   width: 70%;
   margin: auto;
@@ -285,13 +289,13 @@ footer {
 /*****************************************************************
 * SideShow
 *****************************************************************/
-/* line 205, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 #slider {
   z-index: 0;
   position: relative;
   margin-bottom: 10px;
 }
-/* line 210, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 #slider img {
   border: 12px solid rgba(0, 0, 0, 0.8);
   -webkit-box-sizing: border-box;
@@ -299,7 +303,7 @@ footer {
   box-sizing: border-box;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .rslides {
   position: relative;
   list-style: none;
@@ -309,7 +313,7 @@ footer {
   margin: 0;
 }
 
-/* line 225, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .rslides li {
   position: absolute;
   display: none;
@@ -318,14 +322,14 @@ footer {
   top: 0;
 }
 
-/* line 233, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .rslides li:first-child {
   position: relative;
   display: block;
   float: left;
 }
 
-/* line 239, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .rslides img {
   display: block;
   height: auto;
@@ -334,7 +338,7 @@ footer {
   border: 0;
 }
 
-/* line 247, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .centered-btns_nav {
   position: absolute;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -350,29 +354,29 @@ footer {
   margin-top: -45px;
 }
 
-/* line 262, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .centered-btns_nav:active {
   opacity: 1.0;
 }
 
-/* line 266, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .centered-btns_nav.next {
   left: auto;
   background-position: right top;
   right: 1px;
 }
 
-/* line 272, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .centered-btns_nav:focus {
   outline: none;
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 .centered-btns_tabs {
   text-align: center;
 }
 
-/* line 280, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .centered-btns_tabs li {
   display: inline;
   float: none;
@@ -381,7 +385,7 @@ footer {
   margin-right: 5px;
 }
 
-/* line 288, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .centered-btns_tabs a {
   text-indent: -9999px;
   overflow: hidden;
@@ -400,7 +404,7 @@ footer {
   height: 9px;
 }
 
-/* line 306, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .centered-btns_here a {
   background: #222;
   background: rgba(0, 0, 0, 0.8);
