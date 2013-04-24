@@ -311,3 +311,47 @@ footer {
   background: rgba(0,0,0, .8);
 }
 
+
+/*****************************************************************
+* Bike
+*****************************************************************/
+#bike h2.subtitle {
+  margin: 25px 0 5px 0;
+}
+
+.bike_box {
+	width: 48%;
+	float: left;
+	&:first-child {
+		margin-right: 4%;
+	}
+	img {
+		width: 100%;
+    @include box-sizing(border-box);
+		border: 5px solid #EFEFEF;
+		@include box-shadow(rgba(0,0,0,0.1) 0 1px 0, rgba(0,0,0,0.1) 1px 0 0, rgba(0,0,0,0.1) -1px 0 0, rgba(0,0,0,0.1) 0 -1px 0, rgba(0,0,0,0.1) 0 5px 3px);
+		margin-bottom: 7px;
+	}
+}
+
+#bike_1 {
+	margin-right: 4%;
+}
+
+#price {
+	float: right;
+	margin-left: 5%;
+
+	tr, th, td {
+	  border: 1px solid #CFCFCF;
+		padding: 10px;
+		text-align: left;
+	}
+
+	tr:first-child {
+		background: #333;
+		color: #EFEFEF;
+		padding: 7px;
+	}
+}
+
