@@ -61,9 +61,11 @@ header {
 	}
 	ul {
 		float: right;
+		li {
+			color: #AAA;
+		}
 		a {
 			color: $color-white;
-			text-decoration: none;
 		}
 		li:first-child:after {
 			content: "|";
