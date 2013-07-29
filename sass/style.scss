@@ -1,0 +1,128 @@
+/*****************************************************************
+* SETTING
+*****************************************************************/
+
+@import "compass";
+$color-white: #EFEFEF;
+$color-black: #333333;
+
+/*****************************************************************
+* COMMON
+*****************************************************************/
+body {
+	background: url("../img/cloth_alike.png");
+	font: 80%/19px Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
+	letter-spacing: 0.1em !important;
+  color: $color-black;
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	li { list-style: none; }
+}
+
+.box {
+	margin-bottom: 70px;
+}
+
+#container {
+	margin-top: 200px;
+}
+
+
+/*****************************************************************
+* TITLE
+*****************************************************************/
+#about .title {
+	@extend .title;
+	background: url("../img/menu/ja/about.png");
+}
+#news .title {
+	@extend .title;
+	background: url("../img/menu/ja/news.png");
+}
+
+
+.title {
+	height: 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px dotted $color-black;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	//本来のテキストを非表示にする
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+/*****************************************************************
+* HEADER
+*****************************************************************/
+#header {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: url("../img/cloth_alike.png");
+}
+
+#headline {
+	background: $color-black;
+	color: $color-white;
+	padding: 0 15%;
+	font-size: smaller;
+
+	p { margin: 0; }
+	ul {
+		position: absolute;
+		right: 15%;
+		top: 0;
+		li {
+			color: #AAA;
+			display: inline;
+		}
+		li:first-child:after {
+			content: "|";
+			margin: 0 7px;
+		}
+		a { color: $color-white; }
+	}
+}
+
+header {
+	h1 {
+		position: absolute;
+		top: 20px;
+		left: 13%;
+
+		height: 80px;
+		background: url("../img/logo.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		//本来のテキストを非表示にする
+		text-indent: 100%;
+		white-space: nowrap;
+		over-flow: hidden;
+	}
+
+	nav {
+		float: right;
+		margin: 5px 13%;
+		div { margin: 10px; }
+		li {
+			display: inline;
+			margin-right: 15px;
+		}
+	}
+}
+
+
+
+/*****************************************************************
+* ABOUT
+*****************************************************************/

@@ -1,0 +1,496 @@
+@charset "UTF-8";
+/*****************************************************************
+* SETTING
+*****************************************************************/
+/*****************************************************************
+* COMMON
+*****************************************************************/
+/* line 15, ../sass/(comic)style.scss */
+body {
+  font: 80%/19px Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
+  letter-spacing: 0.1em !important;
+  color: #333333;
+  margin: 0;
+}
+
+/* Clear Fix */
+/* line 23, ../sass/(comic)style.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+
+/* line 28, ../sass/(comic)style.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 33, ../sass/(comic)style.scss */
+ul {
+  margin: 0;
+}
+/* line 35, ../sass/(comic)style.scss */
+ul li {
+  list-style: none;
+}
+
+/* line 38, ../sass/(comic)style.scss */
+article {
+  margin-bottom: 80px;
+}
+
+/* line 42, ../sass/(comic)style.scss */
+.title {
+  background: #ec730a;
+  text-align: center;
+  font-size: x-large;
+  line-height: 0.1em;
+  margin-bottom: 40px;
+}
+/* line 48, ../sass/(comic)style.scss */
+.title span {
+  background: #FFF;
+  padding: 15px;
+}
+
+/* line 54, ../sass/(comic)style.scss */
+em {
+  font-style: normal;
+  font-weight: bold;
+  color: #ec730a;
+}
+
+/*****************************************************************
+* HEADER
+*****************************************************************/
+/* line 64, ../sass/(comic)style.scss */
+header {
+  position: relative;
+  z-index: 2;
+  background: url("../img/bg_all.png");
+  border-top: 3px solid #ec730a;
+  color: #FFF;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 0;
+}
+/* line 74, ../sass/(comic)style.scss */
+header div {
+  margin-left: 15px;
+  float: left;
+}
+/* line 77, ../sass/(comic)style.scss */
+header div h1 {
+  line-height: 1em;
+  float: left;
+  margin: 0;
+}
+/* line 81, ../sass/(comic)style.scss */
+header div h1 a {
+  color: #FFF;
+  text-decoration: none;
+  line-height: 68px;
+  font-family: 'Anton', sans-serif;
+}
+/* line 87, ../sass/(comic)style.scss */
+header div h1.effect {
+  background: white url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAHklEQVQImWNkYGBgYGD4//8/A5wF5SBYyAr+//8PAPOCFO0Q2zq7AAAAAElFTkSuQmCC) repeat;
+  font-size: 47px;
+  text-shadow: -4px -4px black, -3px -3px white;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+/* line 98, ../sass/(comic)style.scss */
+header div div {
+  color: #333333;
+  background: url("../img/fukidashi_1.png");
+  background-size: contain;
+  width: 250px;
+  height: 47px;
+  padding: 0 8px 0 18px;
+  margin-top: 10px;
+  line-height: 47px;
+}
+/* line 110, ../sass/(comic)style.scss */
+header nav {
+  float: right;
+  margin-right: 15px;
+  line-height: 60px;
+}
+
+@media all and (min-width: 481px) {
+  /* line 119, ../sass/(comic)style.scss */
+  header li {
+    display: inline;
+  }
+}
+/*****************************************************************
+* TOP_IMG
+*****************************************************************/
+/* line 127, ../sass/(comic)style.scss */
+#top_img {
+  position: relative;
+  padding: 30px 0;
+  background: #DDD;
+  background: url("../img/stripe.png");
+  margin-bottom: 50px;
+  border-bottom: 5px solid #ec730a;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 inset;
+}
+/* line 136, ../sass/(comic)style.scss */
+#top_img img {
+  margin: 0;
+}
+/* line 139, ../sass/(comic)style.scss */
+#top_img div:first-child {
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px 15px;
+}
+/* line 147, ../sass/(comic)style.scss */
+#top_img div:first-child h2 {
+  font-size: xx-large;
+  margin: 0;
+}
+/* line 151, ../sass/(comic)style.scss */
+#top_img div:first-child p {
+  margin: 0;
+  font-size: larger;
+}
+/* line 157, ../sass/(comic)style.scss */
+#top_img div:last-child {
+  width: 330px;
+  height: 198px;
+  background: url("../img/fukidashi_2.png");
+  background-size: cover;
+  z-index: 1;
+  position: absolute;
+  top: 15%;
+  right: 6%;
+  text-align: center;
+  padding: 10px;
+}
+/* line 168, ../sass/(comic)style.scss */
+#top_img div:last-child img {
+  width: 100%;
+}
+/* line 171, ../sass/(comic)style.scss */
+#top_img div:last-child h2 {
+  margin-top: 45px;
+  font-size: large;
+}
+/* line 176, ../sass/(comic)style.scss */
+#top_img div:last-child span {
+  color: red;
+  font-weight: bold;
+  font-size: x-large;
+}
+/* line 181, ../sass/(comic)style.scss */
+#top_img div:last-child small {
+  font-size: x-small;
+}
+
+/*****************************************************************
+* ABOUT
+*****************************************************************/
+/* line 191, ../sass/(comic)style.scss */
+#about {
+  margin-bottom: 0;
+}
+/* line 193, ../sass/(comic)style.scss */
+#about iframe, #about div div {
+  width: 99%;
+  height: 300px;
+  background: url("../img/shuchu-sen.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+/* line 201, ../sass/(comic)style.scss */
+#about iframe p, #about div div p {
+  font-size: x-large;
+  text-align: center;
+  line-height: 1.5em;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -1.5em;
+}
+/* line 212, ../sass/(comic)style.scss */
+#about h1 {
+  font-size: xx-large;
+}
+
+/*****************************************************************
+* RECOMMEND
+*****************************************************************/
+/* line 221, ../sass/(comic)style.scss */
+#recommend {
+  margin-top: 80px;
+}
+/* line 223, ../sass/(comic)style.scss */
+#recommend .rec_box {
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* line 226, ../sass/(comic)style.scss */
+#recommend .rec_box div {
+  margin: 0 auto;
+  width: 160px;
+  height: 160px;
+  border: 3px solid #efefef;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  -ms-border-radius: 80px;
+  -o-border-radius: 80px;
+  border-radius: 80px;
+  padding-top: 15px;
+}
+/* line 234, ../sass/(comic)style.scss */
+#recommend .rec_box h2 {
+  font-size: medium;
+}
+/* line 238, ../sass/(comic)style.scss */
+#recommend .rec_box a {
+  color: #333333;
+  text-decoration: none;
+}
+/* line 242, ../sass/(comic)style.scss */
+#recommend .rec_box i {
+  margin-left: 7px;
+}
+/* line 245, ../sass/(comic)style.scss */
+#recommend .rec_box p:not(:last-child) {
+  text-align: left;
+  padding: 0 5px;
+  min-height: 76px;
+}
+/* line 250, ../sass/(comic)style.scss */
+#recommend .rec_box p:last-child {
+  width: 100%;
+  padding: 5px 0;
+  border-top: 1px dotted #333333;
+  border-bottom: 1px dotted #333333;
+  cursor: pointer;
+}
+/* line 257, ../sass/(comic)style.scss */
+#recommend .rec_box p:last-child:hover, #recommend .rec_box p:last-child.current {
+  background: #ec730a;
+  color: #FFF;
+  border: none;
+}
+/* line 266, ../sass/(comic)style.scss */
+#recommend .people {
+  clear: both;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 5px solid #DDD;
+  padding: 0px 15px;
+}
+/* line 276, ../sass/(comic)style.scss */
+#recommend .people:before, #recommend .people:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+/* line 283, ../sass/(comic)style.scss */
+#recommend .people:before {
+  top: -20px;
+  border-bottom: 20px solid #DDD;
+}
+/* line 287, ../sass/(comic)style.scss */
+#recommend .people:after {
+  top: -10px;
+  border-bottom: 20px solid #FFF;
+}
+/* line 292, ../sass/(comic)style.scss */
+#recommend .people #img_box {
+  border: 1px solid #DDD;
+  padding: 0;
+}
+/* line 295, ../sass/(comic)style.scss */
+#recommend .people #img_box img {
+  width: 100%;
+  border: 5px solid #FFF;
+}
+/* line 300, ../sass/(comic)style.scss */
+#recommend .people blockquote {
+  border: none;
+  margin-top: 0;
+  font-size: medium;
+}
+/* line 304, ../sass/(comic)style.scss */
+#recommend .people blockquote span {
+  margin-left: 10px;
+  font-size: x-small;
+  display: inline;
+}
+/* line 313, ../sass/(comic)style.scss */
+#recommend #people_a:before, #recommend #people_a:after {
+  left: 15%;
+}
+/* line 314, ../sass/(comic)style.scss */
+#recommend #people_b:before, #recommend #people_b:after {
+  left: 50%;
+}
+/* line 315, ../sass/(comic)style.scss */
+#recommend #people_c:before, #recommend #people_c:after {
+  left: 85%;
+}
+
+/*****************************************************************
+* SERVICE
+*****************************************************************/
+/* line 322, ../sass/(comic)style.scss */
+#service h2 {
+  font-size: large;
+}
+/* line 325, ../sass/(comic)style.scss */
+#service div {
+  padding: 10px;
+  text-align: center;
+  border: 3px solid #efefef;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  min-height: 203px;
+}
+/* line 331, ../sass/(comic)style.scss */
+#service div p {
+  text-align: left;
+}
+
+/*****************************************************************
+* PRICE
+*****************************************************************/
+/* line 342, ../sass/(comic)style.scss */
+#price td {
+  text-align: center;
+}
+/* line 346, ../sass/(comic)style.scss */
+#price thead tr:first-child td h2 {
+  font-size: x-large;
+  margin-bottom: 0px;
+}
+/* line 350, ../sass/(comic)style.scss */
+#price thead tr:first-child td:nth-child(2) {
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+}
+/* line 357, ../sass/(comic)style.scss */
+#price thead tr:nth-child(2) h2 {
+  margin-bottom: -5px;
+  font-size: x-large;
+}
+/* line 361, ../sass/(comic)style.scss */
+#price thead tr:nth-child(2) span {
+  font-size: xx-large;
+  color: red;
+}
+/* line 365, ../sass/(comic)style.scss */
+#price thead tr:nth-child(2) div {
+  margin: 15px;
+}
+/* line 369, ../sass/(comic)style.scss */
+#price tbody tr:first-child em {
+  font-size: large;
+}
+/* line 373, ../sass/(comic)style.scss */
+#price ul {
+  margin-top: 20px;
+  font-size: smaller;
+  text-align: right;
+}
+
+/* line 380, ../sass/(comic)style.scss */
+.otameshi {
+  width: 100%;
+  background: url("../img/stripe.png");
+  margin: 30px 0;
+  padding: 20px 0;
+  text-align: center;
+}
+/* line 386, ../sass/(comic)style.scss */
+.otameshi h2 {
+  display: inline;
+  font-size: x-large;
+}
+/* line 390, ../sass/(comic)style.scss */
+.otameshi i {
+  margin: 0 10px;
+}
+/* line 393, ../sass/(comic)style.scss */
+.otameshi a {
+  margin-top: -10px;
+}
+
+/*****************************************************************
+* FAQ
+*****************************************************************/
+/* line 403, ../sass/(comic)style.scss */
+#faq div {
+  margin: 30px 0;
+}
+/* line 405, ../sass/(comic)style.scss */
+#faq div p:first-child {
+  font-size: large;
+  font-weight: bold;
+}
+/* line 408, ../sass/(comic)style.scss */
+#faq div p:first-child:before {
+  content: "Q.";
+  font-size: x-large;
+}
+
+/*****************************************************************
+* FOOTER
+*****************************************************************/
+/* line 420, ../sass/(comic)style.scss */
+footer {
+  background: url("../img/bg_all.png");
+  border-top: 5px solid #ec730a;
+  padding: 20px 0;
+  min-height: 350px;
+  font-size: 11px;
+}
+/* line 427, ../sass/(comic)style.scss */
+footer h2 {
+  font-size: 14px;
+  font-weight: normal;
+  border-bottom: 1px dotted #333333;
+}
+/* line 433, ../sass/(comic)style.scss */
+footer a {
+  text-decoration: none;
+}
+/* line 440, ../sass/(comic)style.scss */
+footer div.fb-like-box,
+footer div.fb-like-box iframe[style],
+footer div.fb-like-box span {
+  width: 100% !important;
+  background: #FFF;
+}
+/* line 445, ../sass/(comic)style.scss */
+footer .copyright {
+  text-align: center;
+  margin-top: 15px;
+}

@@ -1,274 +1,71 @@
 <!DOCTYPE html>
-<html lang="jp">
-<head>
-  <meta charset="utf-8">
-  <title>みずたまや | 瀬戸内海アートの島「豊島」のレンタサイクル・カフェ・ギャラリー</title>
-  <meta name="keywords" content="みずたまや,豊島,レンタサイクル,カフェ,ギャラリー">
-	<meta name="description" content="瀬戸内海アートの島「豊島」のレンタサイクル・カフェ・ギャラリー">
-	<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
-	<link href="css/sp.css" media="screen and (max-device-width: 480px)" rel="stylesheet" type="text/css" />
-  <!--[if IE]>
-      <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <![endif]-->
-	<script src="js/jquery-1.9.1.min.js"></script>
-	<script src="js/responsiveslides.min.js"></script>
-  <script src="js/script.js"></script>
-</head>
+<html lang="ja">
+<!-- Meta -->
+<?php include("_meta.html"); ?>
+
 <body>
 	<!-- ヘッダー -->
-	<header class="cf">
+	<div id="header">
 	  <div id="headline">
-			<div id="header_container">
-				<h1>瀬戸内海豊島のレンタサイクル・カフェ・ギャラリー「みずたまや」</h1>
-				<ul>
-					<li>Japanese</li>
-					<li><a href="index_en.html">English</a></li>
-				</ul>
-			</div>
+			<p>瀬戸内海豊島のレンタサイクル・カフェ・ギャラリー「みずたまや」</p>
+			<ul>
+				<li>Japanese</li>
+				<li><a href="index_en.html">English</a></li>
+			</ul>
 	  </div>
 
 		<!-- トップメニュー -->
-		<div>
-			<section id="top" class="cf">
-				<h1><a href="#"><img src="img/logo.png" alt="みずたまや"></a></h1>
-				<nav>
-					<ul>
-						<div class="cf">
-							<li><a href="#bike"><img src="img/menu/ja/bike.png" alt="レンタサイクル"></a></li>
-							<li><a href="#cafe"><img src="img/menu/ja/cafe.png" alt="カフェ"></a></li>
-							<li><a href="#gallery"><img src="img/menu/ja/gallery.png" alt="ギャラリー"></a></li>
-						</div>
-						<div class="cf">
-							<li><a href="#event"><img src="img/menu/ja/event.png" alt="イベント"></a></li>
-							<li><a href="#access"><img src="img/menu/ja/access.png" alt="アクセス"></a></li>
-							<li><a href="#link"><img src="img/menu/ja/link.png" alt="リンク"></a></li>
-						</div>
-					</ul>
-				</nav>
-			</section>
-		</div>
-	</header>
+		<header class="clearfix">
+			<!-- <h1><a href="#"><img src="img/logo.png" alt="みずたまや"></a></h1> -->
+			<h1><a href="">みずたまや</a></h1>
+			<nav>
+				<ul>
+					<div>
+						<li><a href="#bike"><img src="img/menu/ja/bike.png" alt="レンタサイクル"></a></li>
+						<li><a href="#cafe"><img src="img/menu/ja/cafe.png" alt="カフェ"></a></li>
+						<li><a href="#gallery"><img src="img/menu/ja/gallery.png" alt="ギャラリー"></a></li>
+					</div>
+					<div>
+						<li><a href="#event"><img src="img/menu/ja/event.png" alt="イベント"></a></li>
+						<li><a href="#access"><img src="img/menu/ja/access.png" alt="アクセス"></a></li>
+						<li><a href="#link"><img src="img/menu/ja/link.png" alt="リンク"></a></li>
+					</div>
+				</ul>
+			</nav>
+		</header>
+	</div>
 
-	<div id="container">
+	<!-- メインコンテンツ -->
+	<div id="container" class="grid">
 
 		<!-- フォトスライダー -->
-		<section id="photos">
-			<div id="slider">
-				<ul class="rslides">
-					<li><img src="img/top/1.jpg" alt="" /></li>
-					<li><img src="img/top/2.jpg" alt="" /></li>
-					<li><img src="img/top/3.jpg" alt="" /></li>
-					<li><img src="img/top/4.jpg" alt="" /></li>
-					<li><img src="img/top/5.jpg" alt="" /></li>
-				</ul>
-			</div>
-      <!-- <img src="img/slideshow.jpg" alt="スライドショー"> -->
+		<section id="slideshow">
+			<ul class="slideshow">
+				<li><img src="img/top/1.jpg" alt="" /></li>
+				<li><img src="img/top/2.jpg" alt="" /></li>
+				<li><img src="img/top/3.jpg" alt="" /></li>
+				<li><img src="img/top/4.jpg" alt="" /></li>
+				<li><img src="img/top/5.jpg" alt="" /></li>
+			</ul>
 		</section>
 
-		<!-- 基本情報 -->
-		<div id="info" class="box cf">
-		  <!-- みずたまやのこと -->
-			<section id="about">
-				<hgroup>
-					<h1 class="menu"><img src="img/menu/ja/about.png" alt="みずたまやのこと" ></h1>
-					<!-- <h2 class="subtitle">みずたまやはほげほげほげ</h2> -->
-				</hgroup>
-				<p>
-					みずたまやは2013年、瀬戸内海の美しい海に囲まれた外周約20キロ、人口1,000人余りの島「豊島」にオープンしました。<br>
-					家浦港から徒歩約２分、築50年の民家にて営業しています。<br><br>
-					訪れる方が、コンビニもスーパーマーケットもないこの小さな島のゆるやかな時間の流れや人のあたたかさ、さわやかな海風を感じる、ささやかなお手伝いができれば幸いです。
-				</p>
-			</section>
-
-		  <!-- 最新ニュース -->
-			<section id="news">
-				<h1 class="menu"><img src="img/menu/ja/news.png" alt="最新ニュース" ></h1>
-				<a class="twitter-timeline" href="http://twitter.com/mizutama_ya" data-widget-id="310803471446196224">Tweets by @mizutama_ya</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				<!-- <img src="img/widget.png" id="tmp_widget"> -->
-			</section>
-		</div>
-
-		<!-- レンタサイクル -->
-		<section id="bike" class="box">
-			<hgroup>
-				<h1 class="menu"><img src="img/menu/ja/bike.png" alt="レンタサイクル" ></h1>
-			</hgroup>
-			<div>
-				<p>
-					小さな豊島では、自転車での移動が可能です。時間を気にせずマイペースで観光ができ、細い道にも入って行けるので便利です。
-					太陽の光や海のにおい、鳥のさえずりなど、豊島の豊かな自然を肌で感じながらのサイクリングをお楽しみください。<br>
-					貸し出し状況は、twitter(<a href="https://twitter.com/mizutama_ya">@mizutama-ya</a>)および当HPにてご確認いただけます。
-				</p>
-			</div>
-			<div class="cf">
-				<h2 class="subtitle">種類</h2>
-				<div class="bike_box cf" id="bike_1">
-					<img src="img/bike_1.jpg" alt="電動自転車">
-					<h3>電動自転車</h3>
-					<p>電動アシストで楽々サイクリング。長距離走行対応モデル（13.2Ahバッテリー搭載）なので、坂の多い豊島でも電池切れの心配なく、安心して走行いただけます。</p>
-				</div>
-				<div class="bike_box cf">
-					<img src="img/bike_2.jpg" alt="ママチャリ">
-					<h3>３段変速付きママチャリ</h3>
-					<p>よりリーズナブルに。体力に自信のある方におすすめです。ポップなカラーでご用意しています。</p>
-				</div>
-			</div>
-			<div class="cf">
-				<h2 class="subtitle">ご利用料金</h2>
-						<table id="price">
-							<tr>
-								<th></th>
-								<th>電動</th>
-								<th>ママチャリ</th>
-							</tr>
-							<tr>
-								<th>半日<br>(8:00~12:00/12:00-17:00)</th>
-								<td>1,200円</td>
-								<td>500円</td>
-							</tr>
-							<tr>
-								<th>1日<br>(8:00~17:00)</th>
-								<td>1,500円</td>
-								<td>700円</td>
-							</tr>
-						</table>
-
-						<p>
-							半日料金(8:00〜12:00または12:00〜17:00)と1日料金(8:00〜17:00)があります。<br>
-							ご予約いただけます。お電話にてお問い合わせください。ご予約料はかかりませんが、先着順ですのでお早めにお電話ください。<br>
-							豊島島内へお泊まりのお客様は、オーバーナイト料金をお支払いいただくことで、翌日までの継続利用が可能です。<br>
-							レンタサイクルご利用のお客様のお手荷物は無料でお預かりいたします。（ただし、壊れ物・貴重品はお預かりできかねます。）
-						</p><br>
-						<!-- <p> -->
-						<!-- 	1日乗り放題ですので、時間を気にせずお楽しみいただけます。 -->
-						<!-- 	ご予約が可能です。電話にてお問い合わせください。 -->
-						<!-- 	また、豊島島内へお泊まりのお客様用に1泊2日（翌日返却）のプランもご用意しています。<br> -->
-						<!-- 	旅先でも身軽に観光していただけるよう、手荷物をお預かりしています。（ただし、壊れ物・貴重品はお預かりできかねます。）<br> -->
-						<!-- 	<small>※７月より料金を改訂いたします。新料金は追ってお知らせいたします。</small> -->
-						<!-- </p><br> -->
-						<ul>
-							<li>延長料金　17:00~18:00　＋200円</li>
-							<li>オーバーナイト料金　+300円</li>
-							<li>手荷物預かり　300円(レンタサイクルご利用のお客様は無料)</li>
-						</ul>
-			</div>
-			<div>
-				<h2 class="subtitle">注意事項</h2>
-				<ul>
-					<li>１）パンク、その他故障・異常が起きた場合には、ただちに降車し、電話でご連絡ください。パンク修理代は当店で負担いたしますが、パンク後の継続走行によりチューブ等が破損した場合は、実費にてお支払いいただきます。</li>
-					<li>２）自転車から離れる際は、必ず施錠してください。無施錠等お客様に起因する事情により盗難・紛失した場合には、弁償金を請求する場合があります。</li>
-					<li>３）TSマーク付帯保険に加入していますが、当保険適用外のけが・事故は、お客様の自己責任となりますので、交通ルールを守り安全にご乗車をお願いします。ご利用中の事故・けがについては、当店は一切の責任を負いません。</li>
-					<li>４）営業時間内（8:00〜17:00）にご返却ください。乗り捨てはできません。遅れる場合は、必ずご連絡ください（延長料金あり）。</li>
-					<li>５）ご予約のご変更・キャンセルは、ご利用日の前日までに電話にてご連絡ください。ご連絡のない場合は、キャンセル料として全額代金を申し受けます。レンタル当日の雨天等天候不良の場合は、キャンセル料はかかりませんが、電話連絡をお願いいたします。</li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- カフェ -->
-		<section id="cafe" class="box">
-			<hgroup>
-				<h1 class="menu"><img src="img/menu/ja/cafe.png" alt="カフェ" ></h1>
-			</hgroup>
-			<div>
-				<p>
-					つめたい・あたたかいお飲物とおやつを少々ご用意しています。<br>
-					どうぞ、ほっとひといきしていってください。
-				</p>
-			</div>
-			<div class="cafe_box cf">
-				<div>
-					<h2 class="subtitle">あたたかいお飲み物</h2>
-					<ul>
-						<li>コーヒー：350円</li>
-						<li>カフェオレ：450円</li>
-						<li>紅茶：350円</li>
-						<li>各種ハーブティー：350円</li>
-					</ul>
-				</div>
-				<div>
-					<h2 class="subtitle">つめたいお飲み物</h2>
-					<ul>
-						<li>アイスコーヒー：400円</li>
-						<li>アイスカフェオレ：450円</li>
-						<li>アイスティー：400円</li>
-						<li>各種ハーブティー：350円</li>
-						<li>各種酵素ジュース：400円</li>
-					</ul>
-				</div>
-				<div>
-					<h2 class="subtitle">おやつ</h2>
-					<ul>
-						<li>レモンケーキ：350円</li>
-						<li>豆乳ヨーグルトレモンソース添え：300円</li>
-						<li>日替わりスイーツ：250-400円</li>
-					</ul>
-				</div>
-			</div>
-
-		</section>
-
-		<!-- ギャラリー -->
-		<section id="gallery" class="box">
-			<hgroup>
-				<h1 class="menu"><img src="img/menu/ja/gallery.png" alt="ギャラリー" ></h1>
-				<!-- <h2 class="subtitle">アート巡りにつかれたら<br>あったかいコーヒーでひとやすみ。</h2> -->
-			</hgroup>
+		<!-- みずたまやのこと -->
+		<section id="about" class="col_6">
+			<h1 class="title">みずたまやについて</h1>
 			<p>
-				母屋の４畳と6畳の和室をギャラリーとして公開します。
-				1週間単位での貸し出しが可能です。料金・詳細はお問い合わせください。
-				展示情報は、Facebookにてお知らせします。
+				みずたまやは2013年、瀬戸内海の美しい海に囲まれた外周約20キロ、人口1,000人余りの島「豊島」にオープンしました。<br>
+				家浦港から徒歩約２分、築50年の民家にて営業しています。<br><br>
+				訪れる方が、コンビニもスーパーマーケットもないこの小さな島のゆるやかな時間の流れや人のあたたかさ、さわやかな海風を感じる、ささやかなお手伝いができれば幸いです。
 			</p>
 		</section>
 
-		<!-- イベント -->
-		<section id="event" class="box">
-			<hgroup>
-				<h1 class="menu"><img src="img/menu/ja/event.png" alt="イベント" ></h1>
-				<!-- <h2 class="subtitle">アート巡りにつかれたら<br>あったかいコーヒーでひとやすみ。</h2> -->
-			</hgroup>
-			<p>
-				イベント情報は、Facebookにてお知らせします。
-			</p>
+		<!-- 最新ニュース -->
+		<section id="news" class="col_6">
+			<h1 class="title">最新ニュース</h1>
+			<a class="twitter-timeline" href="http://twitter.com/mizutama_ya" data-widget-id="310803471446196224">Tweets by @mizutama_ya</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<!-- <img src="img/widget.png" id="tmp_widget"> -->
 		</section>
-
-		<!-- アクセス -->
-		<section id="access" class="box">
-			<h1 class="menu"><img src="img/menu/ja/access.png" alt="アクセス" ></h1>
-      <div  id="access_box"class="cf">
-				<div>
-					<iframe height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=ja&amp;geocode=&amp;q=%E9%A6%99%E5%B7%9D%E7%9C%8C%E5%B0%8F%E8%B1%86%E9%83%A1%E5%9C%9F%E5%BA%84%E7%94%BA%E8%B1%8A%E5%B3%B6%E5%AE%B6%E6%B5%A62189&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=41.95363,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=%E6%97%A5%E6%9C%AC,+%E9%A6%99%E5%B7%9D%E7%9C%8C%E5%B0%8F%E8%B1%86%E9%83%A1%E5%9C%9F%E5%BA%84%E7%94%BA%E8%B1%8A%E5%B3%B6%E5%AE%B6%E6%B5%A6&amp;t=m&amp;z=14&amp;ll=34.487434,134.059102&amp;output=embed&iwloc=B"></iframe><br />
-					<small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=%E9%A6%99%E5%B7%9D%E7%9C%8C%E5%B0%8F%E8%B1%86%E9%83%A1%E5%9C%9F%E5%BA%84%E7%94%BA%E8%B1%8A%E5%B3%B6%E5%AE%B6%E6%B5%A62189&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=41.95363,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=%E6%97%A5%E6%9C%AC,+%E9%A6%99%E5%B7%9D%E7%9C%8C%E5%B0%8F%E8%B1%86%E9%83%A1%E5%9C%9F%E5%BA%84%E7%94%BA%E8%B1%8A%E5%B3%B6%E5%AE%B6%E6%B5%A6&amp;t=m&amp;z=14&amp;ll=34.487434,134.059102" style="color:#0000FF;text-align:left" target="_blank">大きな地図で見る(別ウィンドウで開きます)</a></small>
-				</div>
-				<div>
-					<h3>みずたまや</h3>
-					<p>
-						〒761-4661<br>
-						香川県小豆郡土庄町豊島家浦2189<br>
-						TEL: 090-9230-3443<br>
-						Mail: teshima.mizutamaya@gmail.com<br>
-						Twitter: <a href="https://twitter.com/mizutama_ya">@mizutama-ya</a>
-					</p>
-					<h3>アクセス方法</h3>
-					<p>
-						フェリー乗り場から、海を背に陸の方向へ歩きます。（左手に「シーサイド大西」さん、右手に「豊島屋」さんがあります）
-						大きな通りを横断し、そのまま直進。
-						オリーブ畑「未来の森発祥の地」を抜けた右手前がみずたまやです。
-					</p>
-				</div>
-      </div>
-		</section>
-
-		<!-- リンク -->
-		<section id="link" class="box">
-			<hgroup>
-				<h1 class="menu"><img src="img/menu/ja/link.png" alt="リンク" ></h1>
-				<!-- <h2 class="subtitle">豊島リンク集</h2> -->
-			</hgroup>
-			<p>只今準備中です。</p>
-		</section>
-
 	</div>
 
 	<!-- Footer -->

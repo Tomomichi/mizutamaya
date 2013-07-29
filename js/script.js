@@ -37,10 +37,4 @@ $(function() {
 		$("#top").removeClass("shadow");
 		return false;
 	});
-
-	$(".rslides").responsiveSlides({
-		pager: true,
-		nav: true,
-		namespace: "centered-btns",
-	});
 });
