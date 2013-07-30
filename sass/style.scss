@@ -27,7 +27,11 @@ ul {
 }
 
 #container {
-	margin-top: 200px;
+	margin-top: 30px;
+}
+
+section {
+	margin-bottom: 50px !important;
 }
 
 
@@ -41,6 +45,30 @@ ul {
 #news .title {
 	@extend .title;
 	background: url("../img/menu/ja/news.png");
+}
+#bike .title {
+	@extend .title;
+	background: url("../img/menu/ja/bike.png");
+}
+#cafe .title {
+	@extend .title;
+	background: url("../img/menu/ja/cafe.png");
+}
+#gallery .title {
+	@extend .title;
+	background: url("../img/menu/ja/gallery.png");
+}
+#event .title {
+	@extend .title;
+	background: url("../img/menu/ja/event.png");
+}
+#access .title {
+	@extend .title;
+	background: url("../img/menu/ja/access.png");
+}
+#link .title {
+	@extend .title;
+	background: url("../img/menu/ja/link.png");
 }
 
 
@@ -57,15 +85,21 @@ ul {
 	overflow: hidden;
 }
 
+.subtitle {
+	font-size: x-large;
+	font-weight: normal;
+	margin-top: 30px;
+}
+
+h3 {
+	font-size: large;
+}
+
 
 /*****************************************************************
 * HEADER
 *****************************************************************/
 #header {
-	position: fixed;
-	z-index: 2;
-	top: 0;
-	left: 0;
 	width: 100%;
 	background: url("../img/cloth_alike.png");
 }
@@ -73,14 +107,11 @@ ul {
 #headline {
 	background: $color-black;
 	color: $color-white;
-	padding: 0 15%;
 	font-size: smaller;
+	text-align: center;
 
 	p { margin: 0; }
 	ul {
-		position: absolute;
-		right: 15%;
-		top: 0;
 		li {
 			color: #AAA;
 			display: inline;
@@ -95,11 +126,9 @@ ul {
 
 header {
 	h1 {
-		position: absolute;
-		top: 20px;
-		left: 13%;
-
-		height: 80px;
+		width: 360px;
+		height: 96px;
+		margin: 10px auto;
 		background: url("../img/logo.png");
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -109,20 +138,122 @@ header {
 		white-space: nowrap;
 		over-flow: hidden;
 	}
-
 	nav {
-		float: right;
-		margin: 5px 13%;
-		div { margin: 10px; }
-		li {
-			display: inline;
-			margin-right: 15px;
-		}
+		text-align: center;
 	}
 }
 
+
+@media all and (min-width: 481px) {
+	#header {
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		left: 0;
+	}
+	#headline {
+		text-align: left;
+		padding: 0 15%;
+		ul {
+			position: absolute;
+			right: 15%;
+			top: 0;
+		}
+	}
+	header {
+		h1 {
+			position: absolute;
+			top: 20px;
+			left: 13%;
+		}
+		nav {
+			text-align: left;
+			float: right;
+			margin: 5px 13%;
+			ul { margin: 15px 0; }
+			li {
+				display: inline;
+				margin-right: 15px;
+			}
+			ul:nth-child(2) li {
+				margin-right: 50px;
+			}
+		}
+	}
+
+	#container {
+		margin-top: 150px;
+	}
+}
+
+
+/*****************************************************************
+* SLIDESHOW
+*****************************************************************/
+.bx-wrapper .bx-viewport {
+	border: solid $color-black 12px;
+}
 
 
 /*****************************************************************
 * ABOUT
 *****************************************************************/
+#about p {
+	font-size: large;
+	line-height: 1.2em;
+}
+
+
+/*****************************************************************
+* BIKE
+*****************************************************************/
+#bike img {
+	@include box-sizing(border-box);
+	border: 5px solid $color-white;
+	@include box-shadow(rgba(0,0,0,0.1) 0 1px 0, rgba(0,0,0,0.1) 1px 0 0, rgba(0,0,0,0.1) -1px 0 0, rgba(0,0,0,0.1) 0 -1px 0, rgba(0,0,0,0.1) 0 5px 3px);
+}
+
+#bike table {
+	background-color: $color-white;
+	tr:first-child {
+		background-color: $color-black;
+		color: $color-white;
+	}
+}
+
+#bike .col_6 li:before {
+	content: "■";
+	padding-right: 5px;
+}
+
+
+/*****************************************************************
+* ACCESS
+*****************************************************************/
+#access iframe {
+	width: 100%;
+}
+
+
+/*****************************************************************
+* FOOTER
+*****************************************************************/
+footer {
+	background: $color-black;
+	color: $color-white;
+	margin: 0;
+
+	div {
+		margin: 0 15%;
+		padding: 5px 0;
+		text-align: center;
+	}
+	p { margin: 0; }
+}
+
+#page-top {
+	position: fixed;
+	cursor: pointer;
+	right: 10px;
+	bottom: 10px;
+}

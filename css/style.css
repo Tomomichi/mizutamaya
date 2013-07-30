@@ -30,24 +30,59 @@ ul li {
 
 /* line 29, ../sass/style.scss */
 #container {
-  margin-top: 200px;
+  margin-top: 30px;
+}
+
+/* line 33, ../sass/style.scss */
+section {
+  margin-bottom: 50px !important;
 }
 
 /*****************************************************************
 * TITLE
 *****************************************************************/
-/* line 37, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 #about .title {
   background: url("../img/menu/ja/about.png");
 }
 
-/* line 41, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 #news .title {
   background: url("../img/menu/ja/news.png");
 }
 
-/* line 47, ../sass/style.scss */
-.title, #about .title, #news .title {
+/* line 49, ../sass/style.scss */
+#bike .title {
+  background: url("../img/menu/ja/bike.png");
+}
+
+/* line 53, ../sass/style.scss */
+#cafe .title {
+  background: url("../img/menu/ja/cafe.png");
+}
+
+/* line 57, ../sass/style.scss */
+#gallery .title {
+  background: url("../img/menu/ja/gallery.png");
+}
+
+/* line 61, ../sass/style.scss */
+#event .title {
+  background: url("../img/menu/ja/event.png");
+}
+
+/* line 65, ../sass/style.scss */
+#access .title {
+  background: url("../img/menu/ja/access.png");
+}
+
+/* line 69, ../sass/style.scss */
+#link .title {
+  background: url("../img/menu/ja/link.png");
+}
+
+/* line 75, ../sass/style.scss */
+.title, #about .title, #news .title, #bike .title, #cafe .title, #gallery .title, #event .title, #access .title, #link .title {
   height: 30px;
   margin-bottom: 20px;
   border-bottom: 1px dotted #333333;
@@ -58,57 +93,58 @@ ul li {
   overflow: hidden;
 }
 
+/* line 88, ../sass/style.scss */
+.subtitle {
+  font-size: x-large;
+  font-weight: normal;
+  margin-top: 30px;
+}
+
+/* line 94, ../sass/style.scss */
+h3 {
+  font-size: large;
+}
+
 /*****************************************************************
 * HEADER
 *****************************************************************/
-/* line 64, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 #header {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
   width: 100%;
   background: url("../img/cloth_alike.png");
 }
 
-/* line 73, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 #headline {
   background: #333333;
   color: #efefef;
-  padding: 0 15%;
   font-size: smaller;
+  text-align: center;
 }
-/* line 79, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 #headline p {
   margin: 0;
 }
-/* line 80, ../sass/style.scss */
-#headline ul {
-  position: absolute;
-  right: 15%;
-  top: 0;
-}
-/* line 84, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 #headline ul li {
   color: #AAA;
   display: inline;
 }
-/* line 88, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 #headline ul li:first-child:after {
   content: "|";
   margin: 0 7px;
 }
-/* line 92, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 #headline ul a {
   color: #efefef;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 header h1 {
-  position: absolute;
-  top: 20px;
-  left: 13%;
-  height: 80px;
+  width: 360px;
+  height: 96px;
+  margin: 10px auto;
   background: url("../img/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -116,21 +152,142 @@ header h1 {
   white-space: nowrap;
   over-flow: hidden;
 }
-/* line 113, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 header nav {
-  float: right;
-  margin: 5px 13%;
+  text-align: center;
 }
-/* line 116, ../sass/style.scss */
-header nav div {
-  margin: 10px;
+
+@media all and (min-width: 481px) {
+  /* line 148, ../sass/style.scss */
+  #header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+
+  /* line 154, ../sass/style.scss */
+  #headline {
+    text-align: left;
+    padding: 0 15%;
+  }
+  /* line 157, ../sass/style.scss */
+  #headline ul {
+    position: absolute;
+    right: 15%;
+    top: 0;
+  }
+
+  /* line 164, ../sass/style.scss */
+  header h1 {
+    position: absolute;
+    top: 20px;
+    left: 13%;
+  }
+  /* line 169, ../sass/style.scss */
+  header nav {
+    text-align: left;
+    float: right;
+    margin: 5px 13%;
+  }
+  /* line 173, ../sass/style.scss */
+  header nav ul {
+    margin: 15px 0;
+  }
+  /* line 174, ../sass/style.scss */
+  header nav li {
+    display: inline;
+    margin-right: 15px;
+  }
+  /* line 178, ../sass/style.scss */
+  header nav ul:nth-child(2) li {
+    margin-right: 50px;
+  }
+
+  /* line 184, ../sass/style.scss */
+  #container {
+    margin-top: 150px;
+  }
 }
-/* line 117, ../sass/style.scss */
-header nav li {
-  display: inline;
-  margin-right: 15px;
+/*****************************************************************
+* SLIDESHOW
+*****************************************************************/
+/* line 193, ../sass/style.scss */
+.bx-wrapper .bx-viewport {
+  border: solid #333333 12px;
 }
 
 /*****************************************************************
 * ABOUT
 *****************************************************************/
+/* line 201, ../sass/style.scss */
+#about p {
+  font-size: large;
+  line-height: 1.2em;
+}
+
+/*****************************************************************
+* BIKE
+*****************************************************************/
+/* line 210, ../sass/style.scss */
+#bike img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 5px solid #efefef;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0, rgba(0, 0, 0, 0.1) 1px 0 0, rgba(0, 0, 0, 0.1) -1px 0 0, rgba(0, 0, 0, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.1) 0 5px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0, rgba(0, 0, 0, 0.1) 1px 0 0, rgba(0, 0, 0, 0.1) -1px 0 0, rgba(0, 0, 0, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.1) 0 5px 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0, rgba(0, 0, 0, 0.1) 1px 0 0, rgba(0, 0, 0, 0.1) -1px 0 0, rgba(0, 0, 0, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.1) 0 5px 3px;
+}
+
+/* line 216, ../sass/style.scss */
+#bike table {
+  background-color: #efefef;
+}
+/* line 218, ../sass/style.scss */
+#bike table tr:first-child {
+  background-color: #333333;
+  color: #efefef;
+}
+
+/* line 224, ../sass/style.scss */
+#bike .col_6 li:before {
+  content: "■";
+  padding-right: 5px;
+}
+
+/*****************************************************************
+* ACCESS
+*****************************************************************/
+/* line 233, ../sass/style.scss */
+#access iframe {
+  width: 100%;
+}
+
+/*****************************************************************
+* FOOTER
+*****************************************************************/
+/* line 241, ../sass/style.scss */
+footer {
+  background: #333333;
+  color: #efefef;
+  margin: 0;
+}
+/* line 246, ../sass/style.scss */
+footer div {
+  margin: 0 15%;
+  padding: 5px 0;
+  text-align: center;
+}
+/* line 251, ../sass/style.scss */
+footer p {
+  margin: 0;
+}
+
+/* line 254, ../sass/style.scss */
+#page-top {
+  position: fixed;
+  cursor: pointer;
+  right: 10px;
+  bottom: 10px;
+}
