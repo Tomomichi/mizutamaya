@@ -29,6 +29,11 @@ ul {
 #container {
 	margin-top: 30px;
 }
+@media all and (min-width: 481px) {
+	#container {
+		margin-top: 150px;
+	}
+}
 
 section {
 	margin-bottom: 50px !important;
@@ -144,6 +149,7 @@ header {
 }
 
 
+//PC版のみの設定
 @media all and (min-width: 481px) {
 	#header {
 		position: fixed;
@@ -180,10 +186,6 @@ header {
 			}
 		}
 	}
-
-	#container {
-		margin-top: 150px;
-	}
 }
 
 
@@ -198,9 +200,11 @@ header {
 /*****************************************************************
 * ABOUT
 *****************************************************************/
-#about p {
-	font-size: large;
-	line-height: 1.2em;
+@media all and (min-width: 481px) {
+	#about p {
+		font-size: large;
+		line-height: 1.2em;
+	}
 }
 
 
