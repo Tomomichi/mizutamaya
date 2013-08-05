@@ -1,0 +1,70 @@
+/*****************************************************************
+* LOGO
+*****************************************************************/
+/* line 5, ../sass/ja.scss */
+header h1 {
+  width: 320px;
+  height: 85px;
+  margin: 15px auto;
+  background: url("../img/logo_ja.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*****************************************************************
+* TITLE
+*****************************************************************/
+/* line 24, ../sass/ja.scss */
+#about .title {
+  background: url("../img/menu/ja/about.png");
+}
+
+/* line 28, ../sass/ja.scss */
+#news .title {
+  background: url("../img/menu/ja/news.png");
+}
+
+/* line 32, ../sass/ja.scss */
+#bike .title {
+  background: url("../img/menu/ja/bike.png");
+}
+
+/* line 36, ../sass/ja.scss */
+#cafe .title {
+  background: url("../img/menu/ja/cafe.png");
+}
+
+/* line 40, ../sass/ja.scss */
+#gallery .title {
+  background: url("../img/menu/ja/gallery.png");
+}
+
+/* line 44, ../sass/ja.scss */
+#event .title {
+  background: url("../img/menu/ja/event.png");
+}
+
+/* line 48, ../sass/ja.scss */
+#access .title {
+  background: url("../img/menu/ja/access.png");
+}
+
+/* line 52, ../sass/ja.scss */
+#link .title {
+  background: url("../img/menu/ja/link.png");
+}
+
+/* line 58, ../sass/ja.scss */
+.title, #about .title, #news .title, #bike .title, #cafe .title, #gallery .title, #event .title, #access .title, #link .title {
+  height: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #333;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}

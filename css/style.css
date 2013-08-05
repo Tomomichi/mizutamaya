@@ -47,66 +47,14 @@ section {
 /*****************************************************************
 * TITLE
 *****************************************************************/
-/* line 46, ../sass/style.scss */
-#about .title {
-  background: url("../img/menu/ja/about.png");
-}
-
-/* line 50, ../sass/style.scss */
-#news .title {
-  background: url("../img/menu/ja/news.png");
-}
-
-/* line 54, ../sass/style.scss */
-#bike .title {
-  background: url("../img/menu/ja/bike.png");
-}
-
-/* line 58, ../sass/style.scss */
-#cafe .title {
-  background: url("../img/menu/ja/cafe.png");
-}
-
-/* line 62, ../sass/style.scss */
-#gallery .title {
-  background: url("../img/menu/ja/gallery.png");
-}
-
-/* line 66, ../sass/style.scss */
-#event .title {
-  background: url("../img/menu/ja/event.png");
-}
-
-/* line 70, ../sass/style.scss */
-#access .title {
-  background: url("../img/menu/ja/access.png");
-}
-
-/* line 74, ../sass/style.scss */
-#link .title {
-  background: url("../img/menu/ja/link.png");
-}
-
-/* line 80, ../sass/style.scss */
-.title, #about .title, #news .title, #bike .title, #cafe .title, #gallery .title, #event .title, #access .title, #link .title {
-  height: 30px;
-  margin-bottom: 20px;
-  border-bottom: 1px dotted #333333;
-  background-size: contain;
-  background-repeat: no-repeat;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* line 93, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .subtitle {
   font-size: x-large;
   font-weight: normal;
   margin-top: 30px;
 }
 
-/* line 99, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 h3 {
   font-size: large;
 }
@@ -114,39 +62,39 @@ h3 {
 /*****************************************************************
 * HEADER
 *****************************************************************/
-/* line 107, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 #header {
   width: 100%;
   background: url("../img/cloth_alike.png");
 }
 
-/* line 112, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 #headline {
   background: #333333;
   color: #efefef;
   font-size: smaller;
   text-align: center;
 }
-/* line 118, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 #headline p {
   margin: 0;
 }
-/* line 120, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 #headline ul li {
   color: #AAA;
   display: inline;
 }
-/* line 124, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 #headline ul li:first-child:after {
   content: "|";
   margin: 0 7px;
 }
-/* line 128, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 #headline ul a {
   color: #efefef;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 header h1 {
   width: 320px;
   height: 85px;
@@ -158,13 +106,13 @@ header h1 {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 146, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 header nav {
   text-align: center;
 }
 
 @media all and (min-width: 481px) {
-  /* line 154, ../sass/style.scss */
+  /* line 109, ../sass/style.scss */
   #header {
     position: fixed;
     z-index: 2;
@@ -172,40 +120,40 @@ header nav {
     left: 0;
   }
 
-  /* line 160, ../sass/style.scss */
+  /* line 115, ../sass/style.scss */
   #headline {
     text-align: left;
     padding: 0 15%;
   }
-  /* line 163, ../sass/style.scss */
+  /* line 118, ../sass/style.scss */
   #headline ul {
     position: absolute;
     right: 15%;
     top: 0;
   }
 
-  /* line 170, ../sass/style.scss */
+  /* line 125, ../sass/style.scss */
   header h1 {
     position: absolute;
     top: 20px;
     left: 13%;
   }
-  /* line 175, ../sass/style.scss */
+  /* line 130, ../sass/style.scss */
   header nav {
     text-align: left;
     float: right;
     margin: 5px 13%;
   }
-  /* line 179, ../sass/style.scss */
+  /* line 134, ../sass/style.scss */
   header nav ul {
     margin: 15px 0;
   }
-  /* line 180, ../sass/style.scss */
+  /* line 135, ../sass/style.scss */
   header nav li {
     display: inline;
     margin-right: 15px;
   }
-  /* line 184, ../sass/style.scss */
+  /* line 139, ../sass/style.scss */
   header nav ul:nth-child(2) li {
     margin-right: 50px;
   }
@@ -213,7 +161,7 @@ header nav {
 /*****************************************************************
 * SLIDESHOW
 *****************************************************************/
-/* line 195, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .bx-wrapper .bx-viewport {
   border: solid #333333 12px;
 }
@@ -222,7 +170,7 @@ header nav {
 * ABOUT
 *****************************************************************/
 @media all and (min-width: 481px) {
-  /* line 204, ../sass/style.scss */
+  /* line 159, ../sass/style.scss */
   #about p {
     font-size: large;
     line-height: 1.2em;
@@ -231,7 +179,7 @@ header nav {
 /*****************************************************************
 * BIKE
 *****************************************************************/
-/* line 214, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 #bike img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -242,17 +190,17 @@ header nav {
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0, rgba(0, 0, 0, 0.1) 1px 0 0, rgba(0, 0, 0, 0.1) -1px 0 0, rgba(0, 0, 0, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.1) 0 5px 3px;
 }
 
-/* line 220, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 #bike table {
   background-color: #efefef;
 }
-/* line 222, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 #bike table tr:first-child {
   background-color: #333333;
   color: #efefef;
 }
 
-/* line 228, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 #bike .col_6 li:before {
   content: "■";
   padding-right: 5px;
@@ -261,7 +209,7 @@ header nav {
 /*****************************************************************
 * ACCESS
 *****************************************************************/
-/* line 237, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 #access iframe {
   width: 100%;
 }
@@ -269,24 +217,24 @@ header nav {
 /*****************************************************************
 * FOOTER
 *****************************************************************/
-/* line 245, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 footer {
   background: #333333;
   color: #efefef;
   margin: 0;
 }
-/* line 250, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 footer div {
   margin: 0 15%;
   padding: 5px 0;
   text-align: center;
 }
-/* line 255, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 footer p {
   margin: 0;
 }
 
-/* line 258, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 #page-top {
   position: fixed;
   cursor: pointer;

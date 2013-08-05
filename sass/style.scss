@@ -43,52 +43,7 @@ section {
 /*****************************************************************
 * TITLE
 *****************************************************************/
-#about .title {
-	@extend .title;
-	background: url("../img/menu/ja/about.png");
-}
-#news .title {
-	@extend .title;
-	background: url("../img/menu/ja/news.png");
-}
-#bike .title {
-	@extend .title;
-	background: url("../img/menu/ja/bike.png");
-}
-#cafe .title {
-	@extend .title;
-	background: url("../img/menu/ja/cafe.png");
-}
-#gallery .title {
-	@extend .title;
-	background: url("../img/menu/ja/gallery.png");
-}
-#event .title {
-	@extend .title;
-	background: url("../img/menu/ja/event.png");
-}
-#access .title {
-	@extend .title;
-	background: url("../img/menu/ja/access.png");
-}
-#link .title {
-	@extend .title;
-	background: url("../img/menu/ja/link.png");
-}
-
-
-.title {
-	height: 30px;
-	margin-bottom: 20px;
-	border-bottom: 1px dotted $color-black;
-	background-size: contain;
-	background-repeat: no-repeat;
-
-	//本来のテキストを非表示にする
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-}
+//h1タイトルはja/en.scssにそれぞれ記載
 
 .subtitle {
 	font-size: x-large;

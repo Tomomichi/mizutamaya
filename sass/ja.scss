@@ -1,0 +1,69 @@
+/*****************************************************************
+* LOGO
+*****************************************************************/
+header {
+	h1 {
+		width: 320px;
+		height: 85px;
+		margin: 15px auto;
+		background: url("../img/logo_ja.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		//本来のテキストを非表示にする
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}
+
+
+/*****************************************************************
+* TITLE
+*****************************************************************/
+#about .title {
+	@extend .title;
+	background: url("../img/menu/ja/about.png");
+}
+#news .title {
+	@extend .title;
+	background: url("../img/menu/ja/news.png");
+}
+#bike .title {
+	@extend .title;
+	background: url("../img/menu/ja/bike.png");
+}
+#cafe .title {
+	@extend .title;
+	background: url("../img/menu/ja/cafe.png");
+}
+#gallery .title {
+	@extend .title;
+	background: url("../img/menu/ja/gallery.png");
+}
+#event .title {
+	@extend .title;
+	background: url("../img/menu/ja/event.png");
+}
+#access .title {
+	@extend .title;
+	background: url("../img/menu/ja/access.png");
+}
+#link .title {
+	@extend .title;
+	background: url("../img/menu/ja/link.png");
+}
+
+
+.title {
+	height: 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px dotted #333;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	//本来のテキストを非表示にする
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
