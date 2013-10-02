@@ -211,32 +211,41 @@ header nav {
 /*****************************************************************
 * ACCESS
 *****************************************************************/
-/* line 191, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 #access iframe {
   width: 100%;
+}
+/* line 196, ../sass/style.scss */
+#access h3 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+/* line 200, ../sass/style.scss */
+#access .col_4 div:first-child h3 {
+  margin-top: 0;
 }
 
 /*****************************************************************
 * FOOTER
 *****************************************************************/
-/* line 199, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 footer {
   background: #333333;
   color: #efefef;
   margin: 0;
 }
-/* line 204, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 footer div {
   margin: 0 15%;
   padding: 5px 0;
   text-align: center;
 }
-/* line 209, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 footer p {
   margin: 0;
 }
 
-/* line 212, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 #page-top {
   position: fixed;
   cursor: pointer;
